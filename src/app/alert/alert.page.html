@@ -1,0 +1,20 @@
+<ion-header >
+  <ion-toolbar>
+    <ion-title>Usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="profileImg">
+    <img src="../assets/imgs/profileimg.jpg" alt="" />
+  </div>
+  <div id="profileInfo">
+    <p>Nombre de usuario</p>
+    <h1 id="name">{{nombre || 'pepito perez'}}</h1>
+    <p>e-mail</p>
+    <h1 id="email">{{email || 'correo@ejemplo.com'}}</h1>
+  </div>
+  <ion-button expand="full" color="primary" (click)="presentInput()">
+    Cambiar información
+  </ion-button>
+</ion-content>
