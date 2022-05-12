@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
+  topics = ['Ciencia', 'Tecnologia', 'Politica', 'Salud', 'Universo', 'Marketing', 'Innovación', 'Cultura', 'Productividad']
+
   constructor() {}
+
+  doReorder(event){
+    event.detail.complete();
+  }
 
 }
